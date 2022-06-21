@@ -1,24 +1,95 @@
 <body>
 <link rel="stylesheet" href="css/index.css">
-
+<link rel="stylesheet" href="css/traits.css">
 <div id="actual-promos">
 
     <div class="promo-filters">
-        <div class="promo-filter">
-            <button class="buttonlike"></button>
-        </div>
+        <button class="buttonlike white" data-group="best">Лучшие акции</button>
+        <button class="buttonlike white" data-group="direction">Акции по направлениям</button>
+        <button class="buttonlike white" data-group="coralbonus">Акции Coral Bonus</button>
+        <button class="buttonlike white" data-group="other">Другие акции</button>
+        <button class="buttonlike white selected" data-group="*">Все акции</button>
     </div>
 
     <div class="promo-grid">
-        <div class="promo-cell">
-            <div class="visual"></div>
-            <h3 class="line"></h3>
-            <h4 class="subline"></h4>
-            <div class="actions">
-                <a href="" class="buttonlike yellow"></a>
+        <div class="promo-cell" data-group="best" data-trait="discount" data-since="" data-till="2022-07-30">
+            <div class="pad">
+                <div class="visual" style="background-image: url(https://cdn.coral.ru/content/cms/russia/actual-promos/tmp/promo-01.jpg);"><div class="trait"> </div></div>
+                <div class="info">
+                    <h3 class="line">Раннее бронирование</h3>
+                    <h4 class="subline"><span>Минимальная предоплата, остальное &mdash; перед вылетом</span></h4>
+                    <div class="actions">
+                        <a href="https://www.coral.ru/" class="buttonlike yellow">Подробнее</a>
+                    </div>
+                    <div class="terms">по 30 июня 2022</div>
+                </div>
             </div>
-            <div class="terms">
-
+        </div>
+        <div class="promo-cell" data-group="best" data-trait="gift" data-since="" data-till="2022-06-30">
+            <div class="pad">
+                <div class="visual" style="background-image: url(https://cdn.coral.ru/content/cms/russia/actual-promos/tmp/promo-02.jpg);"><div class="trait"> </div></div>
+                <div class="info">
+                    <h3 class="line">Экскурсия в подарок</h3>
+                    <h4 class="subline"><span>При бронировании туров в ОАЭ на рейсах <b>Emirates</b> и <b>AirArabia</b></>
+                    </h4>
+                    <div class="actions">
+                        <a href="https://www.coral.ru/" class="buttonlike yellow">Подробнее</a>
+                    </div>
+                    <div class="terms">С 1 апреля по 30 июня 2022</div>
+                </div>
+            </div>
+        </div>
+        <div class="promo-cell" data-group="other" data-trait="discount" data-since="" data-till="">
+            <div class="pad">
+                <div class="visual" style="background-image: url(https://cdn.coral.ru/content/cms/russia/actual-promos/tmp/promo-03.jpg);"><div class="trait"> </div></div>
+                <div class="info">
+                    <h3 class="line">Акция Фортуна</h3>
+                    <h4 class="subline"><span>Это отдых по очень выгодным ценам</span></h4>
+                    <div class="actions">
+                        <a href="https://www.coral.ru/" class="buttonlike yellow">Подробнее</a>
+                    </div>
+                    <div class="terms">бессрочно</div>
+                </div>
+            </div>
+        </div>
+        <div class="promo-cell" data-group="direction" data-trait="gift" data-since="" data-till="">
+            <div class="pad">
+                <div class="visual" style="background-image: url(https://cdn.coral.ru/content/cms/russia/actual-promos/tmp/promo-04.jpg);"><div class="trait"> </div></div>
+                <div class="info">
+                    <h3 class="line">Бесплатный Fast Track</h3>
+                    <h4 class="subline"><span>Бронируйте отели в Турции и получите Fast Track бесплатно</span></h4>
+                    <div class="actions">
+                        <a href="https://www.coral.ru/" class="buttonlike yellow">Подробнее</a>
+                    </div>
+                    <div class="terms">бессрочно</div>
+                </div>
+            </div>
+        </div>
+        <div class="promo-cell" data-group="best" data-trait="profit" data-since="2022-04-01" data-till="2022-06-30">
+            <div class="pad">
+                <div class="visual" style="background-image: url(https://cdn.coral.ru/content/cms/russia/actual-promos/tmp/promo-05.jpg);"><div class="trait"> </div></div>
+                <div class="info">
+                    <h3 class="line">Отдыхай сейчас &mdash; плати потом</h3>
+                    <h4 class="subline"><span>До 12 месяцев рассрочки по промокоду HALVASUN</span></h4>
+                    <div class="actions">
+                        <a href="https://www.coral.ru/" class="buttonlike yellow">Подробнее</a>
+                    </div>
+                    <div class="terms">бессрочно</div>
+                </div>
+            </div>
+        </div>
+        <div class="promo-cell" data-group="coralbonus,best" data-trait="coralbonus" data-since="2022-03-03" data-till="2022-06-30">
+            <div class="pad">
+                <div class="visual" style="background-image: url(https://cdn.coral.ru/content/cms/russia/actual-promos/tmp/promo-06.jpg);"><div class="trait"> </div></div>
+                <div class="info">
+                    <h3 class="line">Включи весну</h3>
+                    <h4 class="subline">
+                        <span>До <b>3 000 бонусов</b> <br>за первую покупку по карте <br>1 бонус = 1 рубль</span></h4>
+                    <div class="actions">
+                        <a href="https://www.coral.ru/" class="buttonlike yellow">Подробнее</a>
+                    </div>
+                    <div class="terms">бессрочно</div>
+                </div>
             </div>
         </div>
     </div>

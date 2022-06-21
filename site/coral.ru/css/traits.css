@@ -1,0 +1,12 @@
+.promo-cell[data-trait="discount"] .visual .trait {
+  background-image: url(https://cdn.coral.ru/content/cms/russia/actual-promos/tmp/icon-discount.png);
+}
+.promo-cell[data-trait="gift"] .visual .trait {
+  background-image: url(https://cdn.coral.ru/content/cms/russia/actual-promos/tmp/icon-gift.png);
+}
+.promo-cell[data-trait="profit"] .visual .trait {
+  background-image: url(https://cdn.coral.ru/content/cms/russia/actual-promos/tmp/icon-profit.png);
+}
+.promo-cell[data-trait="coralbonus"] .visual .trait {
+  background-image: url(https://cdn.coral.ru/content/cms/russia/actual-promos/tmp/icon-coralbonus.png);
+}
