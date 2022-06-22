@@ -125,6 +125,19 @@
   color: white;
   background-color: #D7232A;
 }
+#actual-promos {
+  opacity: 0;
+  transform: translateY(10vh);
+  -webkit-transition: opacity 0.5s, transform 0.5s;
+  -moz-transition: opacity 0.5s, transform 0.5s;
+  -ms-transition: opacity 0.5s, transform 0.5s;
+  -o-transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+}
+#actual-promos.shown {
+  opacity: 1;
+  transform: none;
+}
 #actual-promos .promo-filters {
   display: flex;
   flex-wrap: wrap;

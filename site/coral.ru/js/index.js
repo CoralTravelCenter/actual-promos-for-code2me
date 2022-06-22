@@ -139,7 +139,7 @@ ASAP(function() {
       stagger: 30,
       filter: initial_selector
     });
-    return $('.promo-filters > [data-group]').on('click', function() {
+    $('.promo-filters > [data-group]').on('click', function() {
       var $this, group, selector;
       $this = $(this);
       group = $this.attr('data-group');
@@ -149,5 +149,8 @@ ASAP(function() {
       });
       return $this.addClass('selected').siblings('.selected').removeClass('selected');
     });
+    return setTimeout(function() {
+      return $('#actual-promos').addClass('shown');
+    }, 0);
   });
 });

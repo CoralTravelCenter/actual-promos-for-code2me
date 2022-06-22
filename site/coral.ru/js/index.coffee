@@ -82,3 +82,6 @@ ASAP ->
             $grid.isotope filter: selector
             $this.addClass('selected').siblings('.selected').removeClass('selected')
 
+        setTimeout ->
+            $('#actual-promos').addClass('shown')
+        , 0
