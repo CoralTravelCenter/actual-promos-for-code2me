@@ -113,7 +113,7 @@ ASAP(function() {
       $el = $(el);
       since = moment($el.attr('data-since') || far_past);
       till = moment($el.attr('data-till') || far_future);
-      if (!now.isBetween(since, till)) {
+      if (!now.isBetween(since.startOf('day'), till.endOf('day'))) {
         return $el.remove();
       }
     });

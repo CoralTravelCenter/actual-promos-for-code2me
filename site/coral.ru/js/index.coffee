@@ -55,7 +55,7 @@ ASAP ->
             $el = $(el)
             since = moment($el.attr('data-since') or far_past)
             till = moment($el.attr('data-till') or far_future)
-            $el.remove() unless now.isBetween since, till
+            $el.remove() unless now.isBetween since.startOf('day'), till.endOf('day')
         # Remove/hide group selector(s) that has no promos
         $('.promo-filters > *').each (idx, el) ->
             $el = $(el)
