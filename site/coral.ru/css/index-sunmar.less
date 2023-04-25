@@ -1,0 +1,170 @@
+@import "../../common/css/common";
+
+@font-face {
+	font-family: 'BlissPro';
+	src: url('https://font.static.useinsider.com/sunmar/BlissPro.ttf');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'BlissPro';
+	src: url('https://font.static.useinsider.com/sunmar/BlissPro-Bold.ttf');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'BlissPro';
+	src: url('https://font.static.useinsider.com/sunmar/BlissPro-Heavy.ttf');
+	font-weight: 900;
+}
+
+@font-face {
+	font-family: 'BlissPro-Italic';
+	src: url('https://font.static.useinsider.com/sunmar/BlissPro-Italic.ttf');
+}
+
+@font-face {
+	font-family: 'BlissPro';
+	src: url('https://font.static.useinsider.com/sunmar/BlissPro-Light.ttf');
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'BlissPro';
+	src: url('https://font.static.useinsider.com/sunmar/BlissPro-Medium.ttf');
+	font-weight: 500;
+}
+
+#actual-promos {
+	font-family: BlissPro;
+	opacity: 0;
+	transform: translateY(10vh);
+	.transit(opacity);
+	.transit(transform);
+
+	&.shown {
+		opacity: 1;
+		transform: none;
+	}
+
+	.promo-filters {
+		display: flex;
+		flex-wrap: wrap;
+
+		> * {
+			flex: 1 1 auto;
+			margin: 0.5em 1em;
+			.transit(color);
+			.transit(background);
+			.transit(box-shadow);
+			cursor: pointer;
+			&.buttonlike.white {
+				background: transparent;
+				border-radius: 100px;
+				box-shadow: 0 0 1px 1px fade(black, 50%);
+				height: 3em;
+				&.selected {
+					pointer-events: none;
+					color: black;
+					background-color: white;
+					box-shadow: 0 2px 8px fade(black, 20%);
+				}
+			}
+		}
+	}
+
+	.promo-grid {
+		.promo-cell {
+			width: 100%/3;
+			padding: 1em;
+			@media screen and (max-width: 1280px) {
+				width: 100%/3;
+			}
+			@media screen and (max-width: @mobile-breakpoint) {
+				width: 100%/2;
+			}
+			@media screen and (max-width: @narrow-breakpoint) {
+				width: 100%;
+			}
+
+			> .pad {
+				.flex-column;
+				align-items: center;
+				background-color: white;
+				border-radius: 0.5em;
+				overflow: hidden;
+				.visual {
+					width: 100%;
+					.proportional(4/3);
+					background: center no-repeat;
+					background-size: cover;
+					//border-radius: 1em;
+					.trait {
+						height: 3.6em;
+						top: 100%;
+						transform: translateY(-50%);
+						background-position: center;
+						background-repeat: no-repeat;
+						background-size: auto 100%;
+					}
+				}
+
+				.info {
+					width: 100%;
+					.flex-column;
+					align-items: center;
+					text-align: center;
+					padding: 2em;
+
+					> *:nth-child(n+2) {
+						margin-top: 1em;
+					}
+
+					h3 {
+						.flex-center;
+						font-size: 24/16em;
+						line-height: 1.1;
+						height: 2.2em;
+						text-align: inherit;
+						margin: 0;
+					}
+
+					h4 {
+						.flex-center;
+						font-weight: normal;
+						font-size: 1em;
+						line-height: 1.2;
+						height: 3.6em;
+						text-align: inherit;
+						margin: 0;
+					}
+
+					.terms {
+						font-size: 80%;
+						font-weight: normal;
+						line-height: 1;
+						text-transform: uppercase;
+						min-height: 1em;
+					}
+					.actions {
+						> a {
+							display: inline-flex;
+							align-items: center;
+							background: transparent;
+							font-size: 1.2em;
+							color: black;
+							&:after {
+								content: '';
+								background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxMSAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEuNSAxTDkuNSA5LjQzNjM2TDEuNSAxNyIgc3Ryb2tlPSIjRDgyNDJBIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4K") center / contain no-repeat;
+								height: 1.2em;
+								width: (11/18 * 1.2em);
+								margin-left: 1em;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
