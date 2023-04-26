@@ -163,6 +163,7 @@
   -ms-transition: opacity 0.5s, transform 0.5s;
   -o-transition: opacity 0.5s, transform 0.5s;
   transition: opacity 0.5s, transform 0.5s;
+  margin-top: 3em;
 }
 #actual-promos.shown {
   opacity: 1;
