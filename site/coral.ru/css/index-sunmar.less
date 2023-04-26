@@ -93,6 +93,7 @@
 				background-color: white;
 				border-radius: 0.5em;
 				overflow: hidden;
+				box-shadow: 0 2px 16px fade(black, 15%);
 				.visual {
 					width: 100%;
 					.proportional(4/3);
@@ -115,6 +116,15 @@
 					align-items: center;
 					text-align: center;
 					padding: 2em;
+					@media screen and (max-width: 1280px) {
+						font-size: 1.5vw;
+					}
+					@media screen and (max-width: @mobile-breakpoint) {
+						font-size: 2vw;
+					}
+					@media screen and (max-width: @narrow-breakpoint) {
+						font-size: 3vw;
+					}
 
 					> *:nth-child(n+2) {
 						margin-top: 1em;

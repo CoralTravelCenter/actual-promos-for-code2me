@@ -220,6 +220,7 @@
   background-color: white;
   border-radius: 0.5em;
   overflow: hidden;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.15);
 }
 #actual-promos .promo-grid .promo-cell > .pad > * {
   max-width: 100%;
@@ -260,6 +261,21 @@
 }
 #actual-promos .promo-grid .promo-cell > .pad .info > * {
   max-width: 100%;
+}
+@media screen and (max-width: 1280px) {
+  #actual-promos .promo-grid .promo-cell > .pad .info {
+    font-size: 1.5vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  #actual-promos .promo-grid .promo-cell > .pad .info {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 576px) {
+  #actual-promos .promo-grid .promo-cell > .pad .info {
+    font-size: 3vw;
+  }
 }
 #actual-promos .promo-grid .promo-cell > .pad .info > *:nth-child(n+2) {
   margin-top: 1em;
